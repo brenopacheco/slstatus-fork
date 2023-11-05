@@ -65,11 +65,11 @@ static const char unknown_str[] = "-";
  */
 
 static const struct arg args[] = {
-	/* function       format          argument */
-	{ disk_perc,      "󰋊 %s%% ",      "/" },
-	{ cpu_perc,       " %s%% ",      NULL },
-	{ ram_perc,       " %s%% ",      NULL },
-	{ run_command,    " %s ",        "sensors | awk '/^Tctl/ {print $2}'" },
-	{ run_command,    "󰜟 %s ",        "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }'" },
-	{ datetime,       " %s",         "%A %d %B %Y, %H:%M:%S" },
+	/* function        format          argument */
+	{ disk_perc,       "󰋊 %s%% ",      "/" },
+	{ cpu_perc,        " %s%% ",      NULL },
+	{ ram_perc,        " %s%% ",      NULL },
+	{ run_command,     " %s ",        "sensors | awk '/^Tctl/ {print $2}'" },
+	{ run_command,     "󰜟 %s ",        "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }'" },
+	{ datetime,        " %s",         "%A %d %B %Y, %H:%M:%S" },
 };
