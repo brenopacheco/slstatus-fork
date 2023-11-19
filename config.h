@@ -71,5 +71,6 @@ static const struct arg args[] = {
 	{ ram_perc,        " %s%% ",      NULL },
 	{ run_command,     " %s ",        "sensors | awk '/^Tctl/ {print $2}'" },
 	{ run_command,     "󰜟 %s%% ",      "pamixer --get-volume" },
-	{ datetime,        " %s",         "%A %d %B %Y, %H:%M:%S" },
+	{ datetime,        "󰸘 %s ",        "%b %d, %a" },
+	{ datetime,        "󰥔 %s",         "%H:%M:%S" },
 };
