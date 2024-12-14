@@ -47,4 +47,4 @@ dist: all
 	tar --create --file=slstatus-${VERSION}.tar --transform 's,^,bin/,' --mode='755' slstatus
 	tar --append --file=slstatus-${VERSION}.tar --transform 's,^,share/man/man1/,' --mode='644' slstatus.1
 	tar --append --file=slstatus-${VERSION}.tar --transform 's,^,share/licenses/slstatus/,' --mode='644' LICENSE
-	gzip slstatus-${VERSION}.tar
+	gzip -f slstatus-${VERSION}.tar
